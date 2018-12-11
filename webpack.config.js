@@ -41,14 +41,6 @@ module.exports = (env) => {
                     }
                 },
                 {
-                    test: /\.css$/,
-                    use: [
-                      'style-loader',
-                      { loader: 'css-loader', options: { importLoaders: 1 } },
-                      'postcss-loader'
-                    ]
-                },
-                {
                     test: /\.less$/,
                     use: [{
                       loader: 'style-loader'
@@ -64,9 +56,6 @@ module.exports = (env) => {
             new CopyWebpackPlugin([
                 {from: 'static'}
             ]),
-            new MiniCssExtractPlugin({
-                filename: "[name].css"
-            })
         ],
         devServer: {
             port: 3000,
