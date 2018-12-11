@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "pretty": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "module": "amd",
+    "target": "es3",
+    "lib": ["dom", "es6", "dom.iterable", "scripthost"],
+    "moduleResolution": "node",
+    "jsx": "react",
+    "noErrorTruncation": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
